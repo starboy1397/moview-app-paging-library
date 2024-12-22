@@ -1,0 +1,46 @@
+[versions]
+agp = "8.5.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+retrofit = "2.9.0"
+glide = "4.16.0"
+glideCompiler = "4.16.0"
+swiperefreshlayout = "1.2.0-alpha01"
+paging = "3.2.0-alpha01"
+hilt = "2.48"
+lifecycle = "2.6.2"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glideCompiler" }  # Added Glide compiler
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "retrofit" } # Use the same version as Retrofit
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" } # New dependency
+swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
+paging-runtime = { group = "androidx.paging", name = "paging-runtime", version.ref = "paging" } # Runtime dependency
+paging-common = { group = "androidx.paging", name = "paging-common", version.ref = "paging" } # Optional testing dependency
+paging-rxjava3 = { group = "androidx.paging", name = "paging-rxjava3", version.ref = "paging" } # RxJava3 support for Paging
+retrofit-rxjava3 = { group = "com.squareup.retrofit2", name = "adapter-rxjava3", version = "2.9.0" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime", version.ref = "lifecycle" }
+lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata", version.ref = "lifecycle" }
+lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "lifecycle" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+
+
